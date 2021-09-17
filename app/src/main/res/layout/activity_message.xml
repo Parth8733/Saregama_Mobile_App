@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Module :"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/modtxt"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linerLayoutid"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/modtxt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inquiry"
+        android:layout_margin="10dp"
+        android:id="@+id/inquirycheckbox">
+    </CheckBox>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seller"
+            android:layout_margin="10dp"
+            android:id="@+id/sellercheckbox"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd Inquiry"
+            android:layout_margin="10dp"
+            android:id="@+id/secondInquirycheckbox"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Old Data"
+            android:layout_margin="10dp"
+            android:id="@+id/olddatacheckbox"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2nd Seller"
+                android:layout_margin="10dp"
+                android:id="@+id/secondsellercheckbox">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2nd Purchase"
+                android:layout_margin="10dp"
+                android:id="@+id/secondpurchasecheckbox"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Up Inquiry"
+                android:layout_margin="10dp"
+                android:id="@+id/upcomingcheckbox"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linerLayoutid"
+        android:id="@+id/langSelect"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language :"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/langtxt"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/langtxt"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/langRadiogrp"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:id="@+id/langEng"
+                android:layout_marginRight="40dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gujarati"
+                android:id="@+id/langGuj"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/langSelect"
+        android:layout_marginTop="20dp"
+        android:id="@+id/msg-layout"
+        >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg-inplayout"
+        app:counterEnabled="true"
+        app:counterMaxLength="480">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Enter Your Message :"
+            android:inputType="textMultiLine"
+            android:id="@+id/messageText"
+            android:maxLength="480"
+            />
+    </android.support.design.widget.TextInputLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageSendBtn"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sendbutton"/>
+    </RelativeLayout>
+
+</RelativeLayout>

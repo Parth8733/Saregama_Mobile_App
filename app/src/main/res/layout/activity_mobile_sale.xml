@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MobileSale"
+    android:layout_margin="10dp"
+    android:background="@drawable/my_custom_background"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2nd Mobile Sale Form"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/mobile_sale_title"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:id="@+id/divider"
+            android:layout_below="@+id/mobile_sale_title"
+            android:layout_marginBottom="10dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inq-inptxtname"
+            android:layout_below="@+id/divider"
+            app:hintAnimationEnabled="true"
+            app:boxBackgroundColor="@color/colorPrimary"
+            app:boxStrokeColor="@color/colorPrimary"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Name :"
+                android:inputType="textCapSentences"
+                android:id="@+id/mobile_sale_name"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inq-inptxtadd"
+            android:layout_below="@+id/inq-inptxtname"
+            app:hintAnimationEnabled="true"
+            app:boxBackgroundColor="@color/colorPrimary"
+            app:boxStrokeColor="@color/colorPrimary"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Address :"
+                android:inputType="textPostalAddress"
+                android:id="@+id/mobile_sale_add"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inq-inptxtmob"
+            android:layout_below="@+id/inq-inptxtadd"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:hint="Mobile Number :"
+                android:id="@+id/mobile_sale_mob"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inq-inptxtiemi"
+            android:layout_below="@+id/inq-inptxtmob"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:hint="IEMI Number :"
+                android:maxLength="15"
+                android:id="@+id/mobile_sale_iemi"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:accessibilityPaneTitle="Select Brand"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_below="@+id/inq-inptxtiemi"
+            android:id="@+id/mobile_sale_brand"
+            android:clickable="false"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_below="@+id/mobile_sale_brand"
+            android:id="@+id/mobile_sale_model"
+            />
+
+        <Spinner
+            android:id="@+id/mobile_sale_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/mobile_sale_model"
+            />
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charger"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="25dp"
+            android:layout_below="@id/mobile_sale_color"
+            android:id="@+id/charger_txt_check"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/charger_check"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/mobile_sale_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HeadPhone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="25dp"
+            android:layout_below="@id/charger_txt_check"
+            android:id="@+id/headphone_txt_check"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/headphone_check"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/charger_check"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inq-inpsellprice"
+            android:layout_below="@+id/headphone_check"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Price :"
+                android:inputType="textCapSentences"
+                android:id="@+id/inq-sell-price"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inq-inpsellsellername"
+            android:layout_below="@+id/inq-inpsellprice"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Seller Name :"
+                android:inputType="textCapSentences"
+                android:id="@+id/mobile_sale_sellername"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Bill Date :"
+                android:layout_below="@+id/inq-inpsellsellername"
+                android:id="@+id/inq-billdate"
+                android:clickable="true"
+                android:focusable="false"
+                />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Submit"
+            android:textSize="20dp"
+            android:id="@+id/finalpayment"
+            android:layout_gravity="center"
+            android:layout_below="@+id/inq-billdate"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/circle_button"
+            />
+    </RelativeLayout>
+
+</ScrollView>

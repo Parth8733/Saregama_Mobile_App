@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootLayout"
+        >
+
+        <TextView
+            android:id="@+id/mobile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/overlayBackground"
+            android:padding="5dp"
+            android:text="Name of Model"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/mobile_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobile_name"
+            android:padding="5dp"
+            android:text="Color"
+            android:background="@color/overlayBackground"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile_price"
+            android:text="Price"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:background="@color/overlayBackground"
+            android:layout_below="@+id/mobile_quantity"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

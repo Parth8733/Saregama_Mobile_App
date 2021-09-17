@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/inquiry"
+            android:title="Inquiry Forms" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/sell"
+            android:title="Seller Forms" />
+        <item
+            android:id="@+id/nav_2ndSeller"
+            android:icon="@drawable/secondhand"
+            android:title="2nd Seller Form"/>
+        <item
+            android:id="@+id/nav_2ndPurchase"
+            android:icon="@drawable/secondhand"
+            android:title="2nd Purchase Form"/>
+
+        <item
+            android:id="@+id/nav_2ndInquiry"
+            android:icon="@drawable/secondhand"
+            android:title="2nd Inquiry Form"/>
+        <item
+            android:id="@+id/nav_accessaryinquiry"
+            android:icon="@drawable/inquiry"
+            android:title="Accessory Inquiry Form"/>
+        <item
+            android:id="@+id/nav_repairinginquiry"
+            android:icon="@drawable/inquiry"
+            android:title="Repairing Inquiry"/>
+        <item
+            android:id="@+id/nav_upcomingMobile"
+            android:icon="@drawable/newproduct"
+            android:title="Up Coming MobileList"/>
+
+        <item
+            android:id="@+id/nav_upcomingMobileForm"
+            android:icon="@drawable/newproduct"
+            android:title="UpComing Inquiry Form"/>
+
+        <item
+            android:id="@+id/nav_usersList"
+            android:icon="@drawable/name"
+            android:title="User List"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="Message" />
+        <item
+            android:id="@+id/nav_dataentry"
+            android:icon="@drawable/data"
+            android:title="Data Entry" />
+
+    </group>
+
+
+
+</menu>

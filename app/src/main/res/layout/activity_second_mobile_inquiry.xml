@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondMobileInquiry"
+    android:background="@drawable/my_custom_background"
+    android:layout_margin="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2nd Mobile Inquiry Form"
+            android:textSize="28dp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/sell-title"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/overlayBackground"
+            android:layout_marginTop="10dp"
+            android:id="@+id/divider"
+            android:layout_below="@+id/sell-title"
+            android:layout_marginBottom="10dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inq-inptxtname"
+            android:layout_below="@+id/divider"
+            app:hintAnimationEnabled="true"
+            app:boxBackgroundColor="@color/colorPrimary"
+            app:boxStrokeColor="@color/colorPrimary"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Inquire Name :"
+                android:inputType="textCapSentences"
+                android:id="@+id/mobile_inq_name"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inq-inptxtadd"
+            android:layout_below="@+id/inq-inptxtname"
+            app:hintAnimationEnabled="true"
+            app:boxBackgroundColor="@color/colorPrimary"
+            app:boxStrokeColor="@color/colorPrimary"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Inquire Address :"
+                android:inputType="textPostalAddress"
+                android:id="@+id/mobile_inq_add"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inq-inptxtmob"
+            android:layout_below="@+id/inq-inptxtadd"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:hint="Mobile Number :"
+                android:id="@+id/mobile_inq_mob"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:accessibilityPaneTitle="Select Brand"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_below="@+id/inq-inptxtmob"
+            android:id="@+id/mobile_inq_brand"
+            android:clickable="false"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_below="@+id/mobile_inq_brand"
+            android:id="@+id/mobile_inq_model"
+            />
+
+        <Spinner
+            android:id="@+id/mobile_inq_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/mobile_inq_model"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inq-inptxtmobprice"
+            android:layout_below="@+id/mobile_inq_color"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_margin="10dp"
+                android:hint="Mobile Price :"
+                android:id="@+id/mobile_inq_price"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inq-inpsellname"
+            android:layout_below="@+id/inq-inptxtmobprice"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Seller Name :"
+                android:inputType="textCapSentences"
+                android:id="@+id/mobile_inq_sellname"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inq-inptcommnet"
+            android:layout_below="@+id/inq-inpsellname"
+            >
+
+            <EditText
+                android:id="@+id/mobile_inq_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Comment :"
+                android:inputType="textCapSentences"
+                android:lines="3" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Submit"
+            android:textSize="20dp"
+            android:id="@+id/finalpayment"
+            android:layout_gravity="center"
+            android:layout_below="@+id/inq-inptcommnet"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/circle_button"
+            />
+    </RelativeLayout>
+
+</ScrollView>

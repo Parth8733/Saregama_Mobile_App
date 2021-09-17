@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shareware.saregama">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".DataEntry"></activity>
+        <activity android:name=".DataEntryAdmin" />
+        <activity android:name=".particular_admin" />
+        <activity android:name=".Repairing_admin" />
+        <activity android:name=".Accessary_admin" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainPage" />
+        <activity android:name=".Seller" />
+        <activity android:name=".Inquiry" />
+        <activity android:name=".ModelList" />
+        <activity android:name=".ViewSellerForm" />
+        <activity android:name=".InquiryViewForm" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Saregama"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginPage"
+            android:label="Login Page" />
+        <activity android:name=".MobileSale" />
+        <activity android:name=".AccessoriesInquiry" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".RepairInquiry" />
+        <activity android:name=".MobilePurchase" />
+        <activity android:name=".SecondMobileInquiry" />
+        <activity android:name=".UpcomingMobile" />
+        <activity android:name=".secondMobilePurchase" />
+        <activity android:name=".UserListActivity" />
+        <activity android:name=".secondMobileSeller" />
+        <activity android:name=".upComingMobileAdmin" />
+        <activity android:name=".secondInquiryForm" />
+        <activity android:name=".upComingMobileForm" />
+    </application>
+
+</manifest>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage"
+    android:background="@drawable/bg"
+>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage"
+    android:id="@+id/main-relativelayout"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic|bold"
+        android:text="Saregama Mobile"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/app_name"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sell"
+        android:id="@+id/sell-img"
+        android:layout_below="@+id/app_name"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selling Product"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_below="@+id/sell-img"
+        android:layout_centerVertical="true"
+        android:id="@+id/sell-txt"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:layout_marginTop="3dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/data"
+        android:id="@+id/data-img"
+        android:layout_below="@+id/app_name"
+        android:layout_marginLeft="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Old Data"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_below="@+id/sell-img"
+        android:layout_centerVertical="true"
+        android:id="@+id/data-txt"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:layout_marginTop="3dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inquiry"
+        android:id="@+id/inquiry-img"
+        android:layout_below="@+id/app_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inquiry-img"
+        android:id="@+id/inquiry-txt"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="40dp"
+        android:text="Inquiry"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/secondhand"
+        android:id="@+id/secondmobile-img"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sell-txt"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/secondhand_sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondmobile-img"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:text="2nd mob Sale"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/secondhand"
+        android:id="@+id/secondmobileinq-img"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sell-txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/secondhand_inq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondmobile-img"
+        android:layout_marginLeft="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="2nd mob Inq"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/secondhand"
+        android:id="@+id/secondmobile2-img"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sell-txt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondmobile-img"
+        android:layout_marginTop="3dp"
+        android:text="2nd mobile Pur"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:id="@+id/secondhand_pur"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inquiry"
+        android:id="@+id/accessories_inquiry_img"
+        android:layout_below="@+id/secondhand_sell"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accessories_inquiry_img"
+        android:id="@+id/accessories_inquiry_txt"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:text="Accessories Inq"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/newproduct"
+        android:id="@+id/upcoming_img"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/secondhand_sell"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accessories_inquiry_img"
+        android:id="@+id/upcoming_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:text="Upcoming"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inquiry"
+        android:id="@+id/repair_inquiry_img"
+        android:layout_below="@+id/secondhand_sell"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repair_inquiry_img"
+        android:id="@+id/repair_inquiry_txt"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="25dp"
+        android:text="Repair Inq"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/adminbtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/repair_inquiry_txt"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Admin"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@drawable/circle_button"/>
+
+</RelativeLayout>
+</ScrollView>

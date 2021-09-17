@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "339440291618",
+    "firebase_url": "https://saregama-371d4.firebaseio.com",
+    "project_id": "saregama-371d4",
+    "storage_bucket": "saregama-371d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339440291618:android:0f18e33b0eb2f502",
+        "android_client_info": {
+          "package_name": "com.shareware.saregama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339440291618-ucr3ors7evls6enjj3pav2tsugsltgsk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shareware.saregama",
+            "certificate_hash": "60ee7dc88d013029e10001ea8ed6fbf202980eb1"
+          }
+        },
+        {
+          "client_id": "339440291618-1dhs519vqtd37erkcj6g3slc98rd1c54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhYOGWWIR6ektbT1aTqv8hgVNIM7IXtI4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339440291618-1dhs519vqtd37erkcj6g3slc98rd1c54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
